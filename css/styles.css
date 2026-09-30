@@ -69,7 +69,7 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 2rem;
 }
-.box {
+.containerBox > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,11 +79,11 @@
 }
 
 @media (max-width: 800px ) {
-    .box:nth-child(3) p  {
+    .containerBox > div:nth-child(3) p  {
         display: inline;
         color: black;
     }
-    .box:nth-child(3)   {
+    .containerBox > div:nth-child(3)   {
         background-color:yellow;
         grid-row: 1;
         place-items: center;
@@ -98,15 +98,15 @@
     margin-top: 3rem;
     grid-gap: 2rem;
 }
-.img {
+#masCosas > div {
     width: 600px;
     margin-bottom: 1rem;
 }
-.img:hover {
+#masCosas > div:hover {
     transform: translateY(9px);
     background-color: rgba(78, 207, 239, 0.289);
 }
-.img > img {
+#masCosas > div > img {
     width: 100%;
     height: 250px;
     object-fit: cover;
